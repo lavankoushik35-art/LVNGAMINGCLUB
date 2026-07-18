@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LVN GAMING CLUB</title>
 
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>🎮 LVN GAMING CLUB</h1>
+    <p>Book Your Indoor & Outdoor Gaming Slots</p>
+</header>
+
+<section class="hero">
+    <h2>WELCOME TO LVN GAMING CLUB</h2>
+    <p>Choose your favorite game and book your slot instantly.</p>
+</section>
+
+<!-- Outdoor Games -->
+<section class="games-section">
+    <h2>🏏 OUTDOOR GAMES</h2>
+
+    <div class="games">
+
+        <div class="card">
+            <h3>🏏 Cricket</h3>
+            <p>₹50 / 2 Hours</p>
+            <button onclick="bookGame('Cricket','₹50 / 2 Hours')">Book Now</button>
+        </div>
+
+        <div class="card">
+            <h3>🤼 Kabbadi</h3>
+            <p>₹20 / 2 Hours</p>
+            <button onclick="bookGame('Kabbadi','₹20 / 2 Hours')">Book Now</button>
+        </div>
+
+        <div class="card">
+            <h3>🏸 Shuttle</h3>
+            <p>₹20 / 1 Hour</p>
+            <button onclick="bookGame('Shuttle','₹20 / 1 Hour')">Book Now</button>
+        </div>
+
+        <div class="card">
+            <h3>🏀 Basket Ball</h3>
+            <p>₹50 / 1 Hour</p>
+            <button onclick="bookGame('Basket Ball','₹50 / 1 Hour')">Book Now</button>
+        </div>
+
+        <div class="card">
+            <h3>🏐 Volley Ball</h3>
+            <p>₹50 / Hour</p>
+            <button onclick="bookGame('Volley Ball','₹50 / Hour')">Book Now</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- Indoor Games -->
+<section class="games-section">
+    <h2>🎮 INDOOR GAMES</h2>
+
+    <div class="games">
+
+        <div class="card">
+            <h3>💻 PC Dead Shot</h3>
+            <p>₹20 / Half Hour</p>
+            <button onclick="bookGame('PC Dead Shot','₹20 / Half Hour')">Book Now</button>
+        </div>
+
+        <div class="card">
+            <h3>🖥️ Poki Games</h3>
+            <p>₹20 / Half Hour</p>
+            <button onclick="bookGame('Poki Games','₹20 / Half Hour')">Book Now</button>
+        </div>
+
+        <div class="card">
+            <h3>🎮 PS5 Games</h3>
+            <p>₹100 / Hour</p>
+            <button onclick="bookGame('PS5 Games','₹100 / Hour')">Book Now</button>
+        </div>
+
+        <div class="card">
+            <h3>🚗 GTA V</h3>
+            <p>₹100 / Hour</p>
+            <button onclick="bookGame('GTA V','₹100 / Hour')">Book Now</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- Booking Form -->
+<section class="booking">
+    <h2>Book Your Slot</h2>
+
+    <input type="text" id="name" placeholder="Enter Your Name">
+
+    <input type="date" id="date">
+
+    <input type="time" id="time">
+
+    <button id="bookBtn">
+        Confirm Booking
+    </button>
+</section>
+
+<footer>
+    <h3>LVN GAMING CLUB</h3>
+    <p>📞 WhatsApp Booking : 9381687402</p>
+    <p>© 2026 LVN GAMING CLUB. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
