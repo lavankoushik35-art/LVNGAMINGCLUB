@@ -1,1 +1,205 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
+body{
+    background:#0d0d0d;
+    color:white;
+}
+
+/* Header */
+
+header{
+    text-align:center;
+    padding:35px 20px;
+    background:linear-gradient(90deg,#6a00ff,#00e5ff);
+    box-shadow:0 0 25px cyan;
+}
+
+header h1{
+    font-size:42px;
+    letter-spacing:2px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h2{
+    font-size:38px;
+    color:#00ffff;
+}
+
+.hero p{
+    margin-top:15px;
+    color:#ddd;
+    font-size:18px;
+}
+
+/* Section */
+
+.games-section{
+    padding:40px 8%;
+}
+
+.games-section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#00ff99;
+    font-size:34px;
+}
+
+/* Cards */
+
+.games{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#181818;
+    border:2px solid cyan;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 0 15px rgba(0,255,255,.3);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px cyan;
+}
+
+.card h3{
+    font-size:24px;
+    margin-bottom:15px;
+    color:#00ffff;
+}
+
+.card p{
+    font-size:20px;
+    color:#ffd700;
+    margin-bottom:20px;
+}
+
+/* Buttons */
+
+.card button,
+#bookBtn{
+
+    background:#00ff99;
+    color:black;
+    border:none;
+    padding:14px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:17px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.card button:hover,
+#bookBtn:hover{
+
+    background:#00ffff;
+    box-shadow:0 0 20px cyan;
+}
+
+/* Booking */
+
+.booking{
+
+    width:90%;
+    max-width:500px;
+
+    margin:60px auto;
+
+    background:#181818;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 0 20px #00ffff55;
+}
+
+.booking h2{
+
+    margin-bottom:20px;
+
+    color:#00ff99;
+}
+
+.booking input{
+
+    width:100%;
+
+    padding:14px;
+
+    margin:10px 0;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:16px;
+}
+
+/* Footer */
+
+footer{
+
+    margin-top:50px;
+
+    text-align:center;
+
+    padding:25px;
+
+    background:#111;
+
+    color:#bbb;
+}
+
+footer h3{
+
+    color:#00ffff;
+
+    margin-bottom:10px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header h1{
+    font-size:30px;
+}
+
+.hero h2{
+    font-size:28px;
+}
+
+.games-section h2{
+    font-size:26px;
+}
+
+.card h3{
+    font-size:22px;
+}
+
+}
